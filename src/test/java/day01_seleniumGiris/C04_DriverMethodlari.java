@@ -27,7 +27,7 @@ public class C04_DriverMethodlari {
         }
         driver.quit();
         // close() ve quit() ikisi de sayfa kapatmak icin kullanilir
-        // close() sadece bir sayfa kapatirken
-        // quit() test sirasinda acilan tum sayfalari kapatir
+        // close() sadece bulunan son sayfayi kapatirken
+        // quit() test sirasinda acilan tum sayfalari kapatir,driver'i kapatiyor,tum fis cekiliyor
     }
 }

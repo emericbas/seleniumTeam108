@@ -22,6 +22,7 @@ public class C06_MavenIlkClass {
       //  4- Bulunan sonuc sayisini yazdiralim
       //  5- Ilk urunu tiklayalim
       //  6- Sayfadaki tum basliklari yazdiralim
+
         //1- https://www.amazon.com/ sayfasina gidelim
         driver.get("https://www.amazon.com/");
         //2- arama kutusunu locate edelim

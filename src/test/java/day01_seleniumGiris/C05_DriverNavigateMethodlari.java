@@ -8,15 +8,22 @@ public class C05_DriverNavigateMethodlari {
         System.setProperty("Webdriver.chrome.driver","src/resources/chromedriver.exe");
         WebDriver driver =new ChromeDriver();
         driver.manage().window().maximize();
+
         // amazon anasayfaya gidin
         driver.get("https://www.amazon.com");
+
         // wisequarter anasayfaya gidin
         driver.get("https://www.wisequarter.com");
+
         // yeniden amazon anasayfaya gidin
         driver.navigate().back();
+
         // wisequarter anasayfaya donun
         driver.navigate().forward();
-        // navigate().to(),   driver.get() ile ayni islemi yapar
+
+        // navigate().to(),   driver.get() ile ayni islemi yapar,
+        // navigate(to) birbirine bagli durumlarda kullanilir,yeni browser acmiyor.
+        // get() methodu daha hizli calisir
         driver.navigate().to("https://www.youtube.com");
         driver.navigate().refresh();
     }

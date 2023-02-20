@@ -19,7 +19,7 @@ public class C04_WebElements {
 
         //arama kutusunu locate edip ,bir webelement olarak kaydedin
         //id'si twotabsearchtextbox olan webelement seklinde locate edecegiz
-       WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));//adina locate islemi denir
+       WebElement searchBox= driver.findElement(By.id("twotabsearchtextbox"));//adina locate islemi denir
 
         /*
         driver'a webelementi tarif etme islemine LOCATE
@@ -39,8 +39,8 @@ public class C04_WebElements {
          */
 
         //arama kutusuna "Nutella" yazip aratin
-        aramaKutusu.sendKeys("Nutella");// Nutella yazisini gonderdik
-        aramaKutusu.submit();// enter'a bas demek
+        searchBox.sendKeys("Nutella");// Nutella yazisini gonderdik
+        searchBox.submit();// enter'a bas demek
 
         Thread.sleep(3000);
         driver.close();

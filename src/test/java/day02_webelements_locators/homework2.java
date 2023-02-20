@@ -35,5 +35,3 @@ public class homework2 {
 
     }
 }
-//<input id="nav-search-submit-button" type="submit" class="nav-input nav-progressive-attribute" value="Go" tabindex="0">
-// control c den sonra control f yaparsak arama cubugunun icine yazip kackez gectigini goruruz
