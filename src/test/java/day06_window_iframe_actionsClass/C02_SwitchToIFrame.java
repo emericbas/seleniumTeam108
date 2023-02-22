@@ -7,6 +7,9 @@ import org.openqa.selenium.WebElement;
 import utilities.TestBase;
 
 public class C02_SwitchToIFrame extends TestBase {
+    // https://the-internet.herokuapp.com/iframe  adresine gidin
+    // "Your content goes here." yazisinin gorunur oldugunu test edin
+    // Elemental Selenium linkine click yapin
     @Test
     public void test01(){
         // https://the-internet.herokuapp.com/iframe  adresine gidin

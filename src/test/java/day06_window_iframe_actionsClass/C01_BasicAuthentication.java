@@ -25,7 +25,9 @@ public class C01_BasicAuthentication extends TestBase {
        //  password      : admin
        //
        driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
+
        //4- Basarili sekilde sayfaya girildigini dogrulayin
+
        String actualGirisYazisi= driver.findElement(By.tagName("p")).getText();
        String expectedIcerik = "Congratulations";
        Assert.assertTrue(actualGirisYazisi.contains(expectedIcerik));
