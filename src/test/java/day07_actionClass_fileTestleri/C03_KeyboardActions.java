@@ -10,11 +10,7 @@ import utilities.TestBase;
 
 public class C03_KeyboardActions extends TestBase {
 /*
-        1- https://www.facebook.com adresine gidelim
-        2-Cookies'i kabul edip
-        Yeni hesap olustur butonuna basalim
-        3- Ad, soyad, mail ve sifre kutularina deger yazalim ve kaydol tusuna basalim
-        4- Kaydol tusuna basalim
+
     */
 
     @Test
@@ -31,33 +27,20 @@ public class C03_KeyboardActions extends TestBase {
         WebElement isimKutusu= driver.findElement(By.xpath("//input[@placeholder='First name']"));
         Actions actions= new Actions(driver);
         Faker faker= new Faker();
-        String fakeEmailAdress=faker.internet().emailAddress();
-        actions.click(isimKutusu)
-                .sendKeys(faker.name().firstName())
-                .sendKeys(Keys.TAB)
-                .sendKeys(faker.name().lastName())
-                .sendKeys(Keys.TAB)
-                .sendKeys(fakeEmailAdress)
-                .sendKeys(Keys.TAB)
-                .sendKeys(fakeEmailAdress)
-                .sendKeys(Keys.TAB)
-                .sendKeys(faker.internet().password())
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys("20")
-                .sendKeys(Keys.TAB)
-                .sendKeys("Jan")
-                .sendKeys(Keys.TAB)
-                .sendKeys("1990")
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.ARROW_RIGHT)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.ENTER).perform();
+       // String fakeEmailAdress=faker.internet().emailAddress();
+        actions.sendKeys(faker.name().firstName())
+                .sendKeys(Keys.TAB).
+                sendKeys(faker.name().lastName()).
+                sendKeys(Keys.TAB).
+                sendKeys(faker.internet().emailAddress()).
+                sendKeys(Keys.TAB).
+                sendKeys(faker.internet().password()).
+                sendKeys(Keys.TAB).
+                sendKeys(Keys.TAB).sendKeys("23").
+                sendKeys(Keys.TAB).sendKeys("FEB").
+                sendKeys(Keys.TAB).sendKeys("2345").sendKeys(Keys.TAB).sendKeys(Keys.ENTER).
+                sendKeys(Keys.TAB).
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
         //4- Kaydol tusuna basalim
         bekle(10);
     }

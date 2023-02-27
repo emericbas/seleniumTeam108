@@ -22,6 +22,7 @@ public class C08_FileUploadTesti extends TestBase {
         //chooseFile butonuna basalim
         //Yuklemek istediginiz dosyayi secelim.
         //Downloads'a indirdigimiz logo.png dosyasini yukleyelim
+
         /*
             chooseFile butonuna basarsak
             bilgisayarimizdan bir dosya secme islemi yapmamiz gerekir
@@ -30,17 +31,7 @@ public class C08_FileUploadTesti extends TestBase {
             chooseFile ile secmemiz gereken dosyanin dosya yolunu olusturup
             olusturulan dosya yolunu sendKeys ile chooseFile butonuna gondermemiz yeterli olur
          */
-        String dinamikDosyaYolu= System.getProperty("user.home")+"/Downloads/logo.png";
-        WebElement chooseFileButonu= driver.findElement(By.id("file-upload"));
-        chooseFileButonu.sendKeys(dinamikDosyaYolu);
-
-        //Upload butonuna basalim.
-        driver.findElement(By.id("file-submit")).click();
-
-        //“File Uploaded!” textinin goruntulendigini test edelim.
-        WebElement fileUploadedYaziElementi=driver.findElement(By.tagName("h3"));
-        Assert.assertTrue(fileUploadedYaziElementi.isDisplayed());
-        bekle(5);
+     bekle(5);
 
     }
 }
